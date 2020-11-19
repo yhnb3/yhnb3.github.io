@@ -2,5 +2,7 @@
 layout: page
 title: Category
 ---
-<p>되긴해 근데?
-</p>
+{% for post in paginator.categories %}
+  <p>{{post.title}}<p>
+{% endfor %}
+<p>되긴해 근데?????</p>
