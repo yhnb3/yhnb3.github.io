@@ -2,5 +2,11 @@
 layout: page
 title: Category
 ---
-{% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign categories_list = site_categories | split:',' | sort %}
+{% assign pages_list = site.pages | sort:"url" %}
+  {% for node in pages_list %}
+    {% if node.title != null %}
+      {% if node.layout == "category" %}
+        <p>{{node.title}}</p>
+     {% endif %}
+    {% endif %}
+  {% endfor %}
