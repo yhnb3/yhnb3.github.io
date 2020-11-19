@@ -3,7 +3,7 @@ layout: page
 title: Category
 ---
 <div class="categories">
-  {% for category in paginator.categories %}
+  {% for category in categories %}
   <div class="category">
     <h1 class="category-title">
         {{ category.title }}
@@ -12,7 +12,7 @@ title: Category
   {% endfor %}
 </div>
 
-<div class="pagination">
+<!-- <div class="pagination">
   {% if paginator.next_page %}
   <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
   {% else %}
@@ -27,4 +27,4 @@ title: Category
   {% else %}
   <span class="pagination-item newer">Newer</span>
   {% endif %}
-</div>
+</div> -->
