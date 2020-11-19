@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Computer Science
+type: category
 ---
 <ul class="posts-list">
   

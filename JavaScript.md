@@ -1,6 +1,7 @@
 ---
 layout: page
-title: JAVA SCRIPT
+title: Java Script
+type: category
 ---
 <ul class="posts-list">
   
