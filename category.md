@@ -2,18 +2,12 @@
 layout: page
 title: Category
 ---
-<div class="posts">
-  {% for post in paginator.categories %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
+<div class="categories">
+  {% for category in paginator.categories %}
+  <div class="category">
+    <h1 class="category-title">
+        {{ category.title }}
     </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
   </div>
   {% endfor %}
 </div>
