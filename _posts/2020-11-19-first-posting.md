@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First Posting
+category: 근황
 ---
 
 첫 포스팅!
