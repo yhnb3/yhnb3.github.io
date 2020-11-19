@@ -1,6 +1,6 @@
 ---
 layout: page
-title: category
+title: Category
 ---
 <ul class="entry-meta inline-list">
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
