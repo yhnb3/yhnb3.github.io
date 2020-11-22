@@ -1,4 +1,4 @@
 ---
 layout: category
-title: Computer Science
+title: ComputerScience
 ---
